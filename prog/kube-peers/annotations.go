@@ -62,10 +62,12 @@ func (pl *peerList) remove(peerNameToRemove string) {
 }
 
 const (
+	// DefaultLeaseDuration is the default lease duration
 	DefaultLeaseDuration = 5 * time.Second
 	retryPeriod          = time.Second * 2
 	jitterFactor         = 1.0
 
+	// KubePeersAnnotationKey is the default annotation key
 	KubePeersAnnotationKey = "kube-peers.weave.works/peers"
 )
 
